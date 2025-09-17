@@ -9,7 +9,7 @@ import pandas as pd
 
 app = FastAPI()
 # Possible error
-model_path = "/Users/anastasia/Downloads/class/ML/part2/models/best/best_model_pipeline.joblib"
+model_path = "ML/part2/models/best/best_model_pipeline.joblib"
 model = joblib.load(model_path)
 
 @app.get("/health", tags=['health'])  
